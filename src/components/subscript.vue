@@ -26,6 +26,7 @@ const logo = ref()
 const status = ref<boolean>(false)
 // v-bind 绑定的src属性url，实现父组件传值动态变化url
 const imgUrl = props.imgUrl
+const repoLink = props.repoLink
 /**
  *  鼠标悬停事件
  *  @method mouseEnter,mouseLeave
