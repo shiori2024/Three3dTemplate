@@ -84,13 +84,19 @@ export default defineComponent({
 .triangle-box {
     text-align: center;
     position: absolute;
-    /* 固定到右上角 */
-    right: 0px;
+    /* 固定到左上角 */
+    left: 0px;
     top: 0px;
+    /* 固定到右上角 */
+    /* right: 0px;
+    top: 0px; */
     width: 0;
     height: 0;
     /* 左边透明，上右有色 */
-    border-left: 100px solid transparent;
+    /* border-left: 100px solid transparent;
+    border-top: 100px solid rgb(238, 238, 238, 0.6); */
+    /* 右边透明，上右有色 */
+    border-right: 100px solid transparent;
     border-top: 100px solid rgb(238, 238, 238, 0.6);
 }
 
@@ -101,8 +107,12 @@ export default defineComponent({
 
 .circle-image {
     position: relative;
+    /* 角标右上位置方案 */
+    /* bottom: 90px;
+    right: 50px; */
+    /* 角标左上位置方案 */
     bottom: 90px;
-    right: 50px;
+    left: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
