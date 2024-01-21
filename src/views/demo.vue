@@ -77,8 +77,8 @@ export default defineComponent({
                 }
             }
             // 在GUI中添加按钮
-            gui.add(btnObj, 'FullScreen')
-            gui.add(btnObj, 'ExitFullScreen')
+            gui.add(btnObj, 'FullScreen').name('全屏')
+            gui.add(btnObj, 'ExitFullScreen').name('退出全屏')
             // GUI folder
             let cubeSet = gui.addFolder('立方体设置')
             cubeSet.add(cube.position, 'x').max(5).min(-5).step(1).name('立方体x轴').onFinishChange((val:String) => {
